@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h4{
+    text-transform: capitalize;
+    color: aliceblue;
+    cursor: pointer;
+}
+header{
+    background-color:rgba(53, 52, 52, 0.8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://avmdergi.com/wp-content/uploads/2017/12/dore-music-magaza-640x428.jpg");
+    background-attachment: fixed;
+    position: relative;
+}
+
+.background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.img1{
+    background-image: url("https://www.avmgezgini.com/upload/files/Doremusic_Akmerkez02.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.img2{
+    background-image: url("https://retailturkiye.com/wp-content/uploads/2017/10/doremusic_akmerkez2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    margin: 5px;
+
+}
+.img3{
+    background-image: url("https://www.avmgezgini.com/upload/files/Doremusic_Akmerkez04.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.pic_cont{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.toplogo a{
+    color: aliceblue;
+}
+.alan{
+    width: 80vh;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+}
+footer{
+   background-color:rgba(53, 52, 52, 0.8);
+}
+
+.logo{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+}
+.logo a{
+    position: absolute;
+    margin-top: 36px;
+}
+.sos a{
+    font-size: 20px;
+    color: aliceblue;
+}
+.h5{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+}
