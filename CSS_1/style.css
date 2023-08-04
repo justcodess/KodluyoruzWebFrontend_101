@@ -7,6 +7,7 @@ h4{
     text-transform: capitalize;
     color: aliceblue;
     cursor: pointer;
+    
 }
 header{
     background-color:rgba(53, 52, 52, 0.8);
@@ -19,7 +20,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url("https://avmdergi.com/wp-content/uploads/2017/12/dore-music-magaza-640x428.jpg");
+    background-image: url("https://schmidtsmusic.com/wp-content/uploads/2015/08/hero-home-page.jpg");
     background-attachment: fixed;
     position: relative;
 }
@@ -66,7 +67,9 @@ header{
 }
 .toplogo a{
     color: aliceblue;
+    text-decoration: none;
 }
+
 .alan{
     width: 80vh;
     margin: auto;
