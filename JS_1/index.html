@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helooo user</title>
+</head>
+<body>
+    <h1> KODLUYORUZ</h1>
+    <p class="text"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+    <script >
+        let d=new Date();
+
+let hour=d.getHours();
+let min=d.getMinutes();
+let sec=d.getSeconds();
+let day=d.getDay();
+
+document.querySelector(".text")
+function myFunction() {
+    let text;
+    let person = prompt("Hi stranger please tell me your name", "");
+    if (person == null || person == "") 
+      text = ` \n Hello Stranger\n Today ${hour}:${sec}`;
+      
+     else {
+      text=" Hello "+person.toLocaleUpperCase() +" Welcome!!";
+    }
+    document.getElementById("text").innerHTML = text;
+  }
+    </script>
+</body>
+</html>
+
+-*-------------------------------------------------------
+
+const form = document.querySelector('form');
+const ul = document.querySelector('ul');
+const button = document.querySelector('button');
+const input = document.getElementById('item');
+let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+
+localStorage.setItem('items', JSON.stringify(itemsArray));
+const data = JSON.parse(localStorage.getItem('items'));
+
+const liMaker = (text) => {
+  const li = document.createElement('li');
+  li.textContent = text;
+  ul.appendChild(li);
+}
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  itemsArray.push(input.value);
+  localStorage.setItem('items', JSON.stringify(itemsArray));
+  liMaker(input.value);
+  input.value = "";
+});
+
+data.forEach(item => {
+  liMaker(item);
+});
+
+button.addEventListener('click', function () {
+  localStorage.clear();
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild);
+  }
+  itemsArray = [];
+});
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>New Tab App</title>
+
+  <link rel="stylesheet" href="css/primitive.css">
+</head>
+
+<body>
+
+  <div class="small-container">
+    <h1>New Tab App</h1>
+
+    <form>
+      <input id="item" type="text" placeholder="New">
+    </form>
+
+    <h2>Items</h2>
+    <ul></ul>
+
+    <button>Clear All</button>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
