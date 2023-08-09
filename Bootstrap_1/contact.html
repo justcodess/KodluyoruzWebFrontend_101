@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .backBtn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+       
+    }
+    .backBtn a{
+        color: #45acb3;
+    }
+        .back{
+            background-image: url("https://www.idfreshfood.com/wp-content/uploads/2017/09/contact_us_2.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            
+        }
+        .contactBox{
+            background-color: #70c0c7cc;
+            
+            height: 45%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 5px solid #628e92cc;
+            border-radius: 20px;
+            padding: 30px;}
+            .contactBox input:focus{
+                outline: 0;
+            }
+        .col{
+            text-align: center;
+            padding: 10px;
+        }
+        h1{
+            text-transform: capitalize;
+        }
+        input,textarea{
+            width: 30vh;
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button:hover{
+            opacity: 0.8;
+            color: aliceblue;
+            border-color: aliceblue;
+            background-color:#628e92cc;
+            transition: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+    <div class="contactBox">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>contact us</h1>
+                </div>
+
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellendus officiis reprehenderit perferendis.</p>
+                </div>
+
+                <div class="col">
+                    <div><input type="text" id="name"
+                        placeholder="your name"></div>
+                </div>
+
+                <div class="col">
+                    <div><input type="text" id="email"
+                        placeholder="  _______@gmail.com"></div>
+                </div>    
+                <div class="col">
+                    <textarea id="message" rows="6"
+                    placeholder="message:"></textarea>
+                </div>
+                <div class="col">
+                    <button type="button" class="p-3">send us!</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="backBtn">
+        <a href="index.html"><i class="fa-solid fa-circle-left fa-3x"></i></a>
+    </div>
+</div>
+</body>
+</html>
