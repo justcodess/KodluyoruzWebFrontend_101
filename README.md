@@ -1,5 +1,5 @@
 # KODLUYORUZ WEB DEVELOPER PATİKASI
->Bu repo kodluyoruz frond-End Eğitiminde oluşturduğum repo
+>Bu repo kodluyoruz frond-End Eğitiminde oluşturduğum repo<br>
 >Burada yaptığım alıştırmaları paylaşacağım
 
 
@@ -28,11 +28,11 @@
 >![musicStore about company](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_1/aboutus-html.png)<br>
 
 ## Google 1938 Clone
->Google First Version clone <br>
+>Google First Version clone  https://github.com/justcodess/kodluyoruzilkrepo/tree/main/CSS_2<br>
 >![google 1938](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_2/google-1938.png)
 
 ## Google Clone
->Google New <br>
+>Google New  https://github.com/justcodess/kodluyoruzilkrepo/tree/main/CSS_3<br>
 >![google](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_3/google-2023.png)
 
 
