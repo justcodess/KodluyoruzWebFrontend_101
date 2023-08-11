@@ -1,24 +1,31 @@
-# kodluyoruzilkrepo
-
-
-Bu repo kodluyoruz frond-End Eğitiminde oluşturduğumuz ilk repo.İçerisinde bir adet README dosyası,bir adet index.html barındırıyor
+# KODLUYORUZ WEB DEVELOPER PATİKASI
+Bu repo kodluyoruz frond-End Eğitiminde oluşturduğum repo
+Burada yaptığım alıştırmaları paylaşacağım
 
 ![örnekPhoto](https://github.com/Kodluyoruz/taskforce/raw/main/git/odev1/figures/github.png)
 
 
-## Installation
-Öncelikle projeyi clonelayın. (Buraya sizin reponuzdan aldığınız link gelecek)
+## Online Course System 
+>Online Course System https://github.com/justcodess/kodluyoruzilkrepo/tree/main/Bootstrap_1
+>![course](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/Bootstrap_1/index-html.png)
+>![course](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/Bootstrap_1/allCourses-html.png)
+>![course](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/Bootstrap_1/courses-unity-html(example%20page).png)
+>![course](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/Bootstrap_1/contact-html.png)
 
->git clone https://github.com/justcodess/kodluyoruzilkrepo.git
+## Music Store
+>Music Store  https://github.com/justcodess/kodluyoruzilkrepo/tree/main/CSS_1
+>![musicStore](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_1/index-html.png)
+>![musicStore](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_1/company-html.png)
+>![musicStore](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_1/aboutus-html.png)
 
-## Usage
-Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
+## Google 1938 Clone
+>Google First Version clone 
+>![google](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_2/google-1938.png)
 
-> cd kodluyoruzilkrepo
-> code .
+## Google Clone
+>Google clone 
+>![google](https://github.com/justcodess/kodluyoruzilkrepo/blob/main/CSS_3/google-2023.png)
 
-## Contributing
-Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
