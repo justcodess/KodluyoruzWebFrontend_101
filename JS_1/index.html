@@ -3,104 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>helooo user</title>
+    <title>greeting</title>
+    <style>
+        body{
+            margin:0 auto; 
+            text-align:center; 
+            background-color: antiquewhite;}
+        .container{
+            background-color: antiquewhite;
+  
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .text1{
+            margin:0 auto;
+            text-align:center;
+            font-size: 25px;
+            
+        }
+       
+    </style>
 </head>
 <body>
-    <h1> KODLUYORUZ</h1>
-    <p class="text"></p>
+    <div class="container">
+        <h1>NABER CINIM</h1>
+      <div class="text1">
+        <span><b></b></span>
+      </div>
+        
+      
+      
+     
+    </div>
 
-<button onclick="myFunction()">Try it</button>
+
 
     <script >
-        let d=new Date();
+    let d=new Date();
 
-let hour=d.getHours();
-let min=d.getMinutes();
-let sec=d.getSeconds();
-let day=d.getDay();
+    let hour=d.getHours();
+    let min=d.getMinutes();
+    let sec=d.getSeconds();
+    
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    let day = days[d.getDay()];
 
-document.querySelector(".text")
-function myFunction() {
-    let text;
+    let text=document.querySelector(".text1");
+    
+   
+    
     let person = prompt("Hi stranger please tell me your name", "");
     if (person == null || person == "") 
-      text = ` \n Hello Stranger\n Today ${hour}:${sec}`;
+      text.innerHTML = `  Hello Stranger <br> Today ${hour}:${min}:${sec} ${day}`;
       
      else {
-      text=" Hello "+person.toLocaleUpperCase() +" Welcome!!";
+      text.innerHTML=` Hello <b>${person.toUpperCase()} ! </b> Welcome <br> Today ${hour}:${min}:${sec} ${day} <br>You are in my page now I hope so you have happyy day`;
     }
     document.getElementById("text").innerHTML = text;
-  }
+    
+  
     </script>
 </body>
-</html>
-
--*-------------------------------------------------------
-
-const form = document.querySelector('form');
-const ul = document.querySelector('ul');
-const button = document.querySelector('button');
-const input = document.getElementById('item');
-let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-
-localStorage.setItem('items', JSON.stringify(itemsArray));
-const data = JSON.parse(localStorage.getItem('items'));
-
-const liMaker = (text) => {
-  const li = document.createElement('li');
-  li.textContent = text;
-  ul.appendChild(li);
-}
-
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  itemsArray.push(input.value);
-  localStorage.setItem('items', JSON.stringify(itemsArray));
-  liMaker(input.value);
-  input.value = "";
-});
-
-data.forEach(item => {
-  liMaker(item);
-});
-
-button.addEventListener('click', function () {
-  localStorage.clear();
-  while (ul.firstChild) {
-    ul.removeChild(ul.firstChild);
-  }
-  itemsArray = [];
-});
-
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>New Tab App</title>
-
-  <link rel="stylesheet" href="css/primitive.css">
-</head>
-
-<body>
-
-  <div class="small-container">
-    <h1>New Tab App</h1>
-
-    <form>
-      <input id="item" type="text" placeholder="New">
-    </form>
-
-    <h2>Items</h2>
-    <ul></ul>
-
-    <button>Clear All</button>
-  </div>
-
-  <script src="js/scripts.js"></script>
-</body>
-
 </html>
